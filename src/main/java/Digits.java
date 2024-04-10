@@ -7,7 +7,7 @@ public class Digits
 
 	public Digits(int num){
 	int temp = num;
-		for(int x = digitList.size()-1; x >= 0; x++){
+		for(int x = digitList.size()-1; x >= 0; x--){
 	if(temp > 0){
 digitList.add(x, temp%10);
 temp = temp/10;

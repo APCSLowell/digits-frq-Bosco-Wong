@@ -16,7 +16,7 @@ temp = temp/10;
 }
 
 	public boolean isStrictlyIncreasing(){
-for(int x = 1; x < digitList.size()-1; x++)
+for(int x = 1; x < digitList.size(); x++)
 if(digitList.get(x) < digitList.get(x-1))
 return false;
 return true;

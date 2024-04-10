@@ -6,11 +6,12 @@ public class Digits
 	private ArrayList<Integer> digitList;
 
 	public Digits(int num){
+	int size = 0;
 	int temp = num;
-	if(num = 0){
-		digitsList.add(0);
+	if(num == 0){
+		digitList.add(0);
 	}
-		else
+	else{
 		for(int x = digitList.size()-1; x >= 0; x--){
 		if(temp > 0){
 	digitList.add(temp%10);
@@ -18,7 +19,7 @@ public class Digits
 }
 }
 }
-
+	}
 	public boolean isStrictlyIncreasing(){
 for(int x = 1; x < digitList.size(); x++){
 if(digitList.get(x) < digitList.get(x-1)){

@@ -14,7 +14,7 @@ public class Digits
 	else{
 		for(int x = digitList.size()-1; x >= 0; x--){
 		if(temp > 0){
-	digitList.add(temp%10);
+	digitList.add(x,temp%10);
 	temp = temp/10;
 }
 }

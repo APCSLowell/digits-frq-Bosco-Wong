@@ -21,10 +21,15 @@ public class Digits
 }
 	}
 	public boolean isStrictlyIncreasing(){
-if(digitList.size() > 1)
+if(digitList.size() < 1)
+	return true;
+		
 for(int x = 0; x < digitList.size()-1; x++){
 if(digitList.get(x) > digitList.get(x+1)){
 return false;
+}
+if(digitList.get(x) == digitList.get(x+1)){
+	return false;
 }
 }
 return true;

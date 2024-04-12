@@ -15,7 +15,7 @@ if(temp == 0)
 digitList.add(0,0);
 	}
 
-}
+
 	
 	public boolean isStrictlyIncreasing(){
 if(digitList.size() < 1)

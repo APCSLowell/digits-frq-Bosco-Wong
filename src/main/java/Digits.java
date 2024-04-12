@@ -11,7 +11,7 @@ int temp = num;
 if(temp == 0) 
 digitList.add(0,0);
 		
-while(temp >= 0){
+while(temp > 0){
 digitList.add(0,temp%10);
 temp = temp/10;
 }

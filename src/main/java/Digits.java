@@ -6,6 +6,7 @@ public class Digits
 	private ArrayList<Integer> digitList;
 
 	public Digits(int num){
+digitList = ArrayList<Integer>();
 int temp = num;
 if(temp == 0) 
 digitList.add(0,0);
@@ -20,7 +21,7 @@ temp = temp/10;
 if(digitList.size() < 1)
 	return true;
 		
-for(int x = 0; x < digitList.size()-2; x++){
+for(int x = 0; x < digitList.size()-1; x++){
 if(digitList.get(x) > digitList.get(x+1)){
 return false;
 }

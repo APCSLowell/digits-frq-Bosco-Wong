@@ -11,11 +11,9 @@ while(temp > 0){
 digitList.add(0,temp%10);
 temp = temp/10;
 }
-if(temp == 0)
+if(temp == 0) 
 digitList.add(0,0);
 	}
-
-
 	
 	public boolean isStrictlyIncreasing(){
 if(digitList.size() < 1)
